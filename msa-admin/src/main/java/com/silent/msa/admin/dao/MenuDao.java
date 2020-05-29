@@ -3,7 +3,6 @@ package com.silent.msa.admin.dao;
 import com.silent.msa.admin.model.MenuModel;
 import org.apache.ibatis.annotations.Param;
 
-import javax.annotation.security.PermitAll;
 import java.util.List;
 
 public interface MenuDao {

@@ -20,5 +20,9 @@ public interface UserDao {
 
     List<UserModel> findPage(@Param(value = "name") String name);
 
-    List<UserModel> findPageBuNameAndEmail(@Param(value = "name") String name, @Param(value = "email") String email);
+    UserModel findByName(@Param(value = "name") String name);
+
+    List<UserModel> findPageByName(@Param(value = "name") String name);
+
+    List<UserModel> findPageByNameAndEmail(@Param(value = "name") String name, @Param(value = "email") String email);
 }

@@ -70,19 +70,19 @@ public class UserModel extends BaseModel{
         this.depId = depId;
     }
 
-    public String getRoleName() {
+    public String getRoleNames() {
         return roleName;
     }
 
-    public void setRoleName(String roleName) {
+    public void setRoleNames(String roleName) {
         this.roleName = roleName;
     }
 
-    public List<UserRoleModel> getUserRoleModel() {
+    public List<UserRoleModel> getUserRoleModels() {
         return userRoleModel;
     }
 
-    public void setUserRoleModel(List<UserRoleModel> userRoleModel) {
+    public void setUserRoleModels(List<UserRoleModel> userRoleModel) {
         this.userRoleModel = userRoleModel;
     }
 }

@@ -1,5 +1,7 @@
 package com.silent.msa.admin.model;
 
+import java.util.List;
+
 public class MenuModel extends BaseModel{
     private Long parentId;
 
@@ -17,6 +19,12 @@ public class MenuModel extends BaseModel{
 
     private Byte delFlag;
 
+    // 非数据库字段
+    private String parentName;
+    // 非数据库字段
+    private Integer level;
+    // 非数据库字段
+    private List<MenuModel> children;
     public Long getParentId() {
         return parentId;
     }
@@ -79,5 +87,29 @@ public class MenuModel extends BaseModel{
 
     public void setDelFlag(Byte delFlag) {
         this.delFlag = delFlag;
+    }
+
+    public String getParentName() {
+        return parentName;
+    }
+
+    public void setParentName(String parentName) {
+        this.parentName = parentName;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public List<MenuModel> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<MenuModel> children) {
+        this.children = children;
     }
 }

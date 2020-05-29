@@ -22,8 +22,8 @@ public class MybatisPageHelper {
      * @param args 方法参数
      * @return
      */
-    public static PageResult findPage(PageRequest pageRequest, Object mapper) {
-        return findPage(pageRequest, mapper, findPage);
+    public static PageResult findPage(PageRequest pageRequest, Object dao) {
+        return findPage(pageRequest, dao, findPage);
     }
 
     /**
@@ -35,13 +35,13 @@ public class MybatisPageHelper {
      * @return
      */
     @SuppressWarnings({ "unchecked", "rawtypes" })
-    public static PageResult findPage(PageRequest pageRequest, Object mapper, String queryMethodName, Object... args) {
+    public static PageResult findPage(PageRequest pageRequest, Object dao, String queryMethodName, Object... args) {
         // 设置分页参数
         int pageNum = pageRequest.getPageNum();
         int pageSize = pageRequest.getPageSize();
         PageHelper.startPage(pageNum, pageSize);
         // 利用反射调用查询方法
-        Object result = ReflectionUtils.invoke(mapper, queryMethodName, args);
+        Object result = ReflectionUtils.invoke(dao, queryMethodName, args);
         return getPageResult(pageRequest, new PageInfo((List) result));
     }
 
