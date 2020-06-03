@@ -1,6 +1,8 @@
 package com.silent.msa.admin.model;
 
 public class LogModel {
+    private Long id;
+
     private String userName;
 
     private String operation;
@@ -12,6 +14,14 @@ public class LogModel {
     private Long time;
 
     private String ip;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getUserName() {
         return userName;
