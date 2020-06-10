@@ -10,7 +10,7 @@
 			<relativePath/> <!-- lookup parent from repository -->
 		</parent>
 
-		<groupId>com.silent</groupId>
+		<groupId>com.github</groupId>
 		<artifactId>msa-pom</artifactId>
 		<version>${project.version}</version>
 		<packaging>pom</packaging>

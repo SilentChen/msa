@@ -10,7 +10,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	
-	<groupId>com.silent</groupId>
+	<groupId>com.github</groupId>
 	<artifactId>msa-common</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0</version>

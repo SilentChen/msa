@@ -11,11 +11,11 @@
 	</parent>
 	
 	<groupId>com.github</groupId>
-	<artifactId>msa-admin</artifactId>
+	<artifactId>msa-example</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0</version>
-	<name>msa-admin</name>
-	<description>msa-admin</description>
+	<name>msa-example</name>
+	<description>msa-example</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
