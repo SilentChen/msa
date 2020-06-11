@@ -56,9 +56,12 @@ public class LoginController {
         if(kaptcha == null){
             return HttpResult.error("验证码已失效");
         }
-		if(!captcha.equals(kaptcha)){
+
+        /*
+        测试注释
+        if(!captcha.equals(kaptcha)){
 			return HttpResult.error("验证码不正确");
-		}
+		}*/
 
         // 用户信息
         UserModel user = userService.findByName(username);
@@ -79,7 +82,7 @@ public class LoginController {
 
         // 系统登录认证
         JwtAuthenticationToken token = SecurityUtils.login(request, username, password, authenticationManager);
-
+        //System.out.println(token);
         return HttpResult.ok(token);
     }
 }

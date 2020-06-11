@@ -18,7 +18,7 @@ import org.springframework.security.web.authentication.logout.HttpStatusReturnin
 
 /**
  * Spring Security Config
- * @author Louis
+ * @author nobody
  * @date Nov 20, 2018
  */
 @Configuration
