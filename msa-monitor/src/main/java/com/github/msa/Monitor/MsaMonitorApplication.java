@@ -1,15 +1,15 @@
-package com.github.msa.admin;
+package com.github.msa.Monitor;
 
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
+@EnableAdminServer
 @EnableDiscoveryClient
-@EnableConfigServer
 @SpringBootApplication
-public class MsaConfigApplication {
+public class MsaMonitorApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MsaConfigApplication.class, args);
+        SpringApplication.run(MsaMonitorApplication.class, args);
     }
 }

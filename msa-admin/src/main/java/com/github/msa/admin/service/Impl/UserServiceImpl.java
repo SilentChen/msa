@@ -113,7 +113,7 @@ public class UserServiceImpl implements UserService {
         Set<String> perms = new HashSet<>();
         List<MenuModel> menuModels = menuService.findByUser(userName);
         for(MenuModel menuModel : menuModels) {
-            if(null != menuModel.getPerms() && "".equals(menuModel.getPerms())) {
+            if(null != menuModel.getPerms() && !"".equals(menuModel.getPerms())) {
                 perms.add(menuModel.getPerms());
             }
         }

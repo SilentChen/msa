@@ -5,7 +5,7 @@ Spring:
     name: msa-config
   cloud:
     consul: localhost
-      port: 8500
+    port: 8500
     discovery:
       serviceName: ${spring.application.name} # 注册到consul的服务名称
     config:

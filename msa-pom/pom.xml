@@ -41,5 +41,7 @@
 			<module>../msa-common</module>
 			<module>../msa-core</module>
 			<module>../msa-config</module>
+			<module>../msa-monitor</module>
+			<module>../msa-hystrix</module>
 		</modules>
 </project>

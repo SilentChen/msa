@@ -3,6 +3,7 @@ package com.github.msa.admin.util;
 import com.github.msa.admin.security.JwtAuthenticationToken;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -80,10 +81,11 @@ public class SecurityUtils {
      * @return
      */
     public static Authentication getAuthentication() {
-        if(SecurityContextHolder.getContext() == null) {
+        SecurityContext securityContext = SecurityContextHolder.getContext();
+        if(securityContext == null) {
             return null;
         }
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Authentication authentication = securityContext.getAuthentication();
 
         return authentication;
     }
