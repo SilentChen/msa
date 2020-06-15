@@ -3,6 +3,7 @@ server:
 Spring:
   application:
     name: msa-config
+  profiles: native  # native or git or svn
   cloud:
     consul: localhost
     port: 8500
@@ -11,6 +12,8 @@ Spring:
     config:
       label: master  # git仓库分支
       server:
+        native:
+          search-locations: classpath:/config
         git:
           uri: https://github.com/SilentChen/msa.git # 配置git仓库的地址
           search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。

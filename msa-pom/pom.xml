@@ -38,10 +38,14 @@
 		</build>
 		<modules>
 			<module>../msa-admin</module>
+			<module>../msa-backup</module>
 			<module>../msa-common</module>
 			<module>../msa-core</module>
 			<module>../msa-config</module>
 			<module>../msa-monitor</module>
 			<module>../msa-hystrix</module>
+			<module>../msa-producer</module>
+			<module>../msa-producer2</module>
+			<module>../msa-consumer</module>
 		</modules>
 </project>
