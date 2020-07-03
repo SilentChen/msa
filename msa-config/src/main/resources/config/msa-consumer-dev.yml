@@ -1,0 +1,3 @@
+server:
+  port: 7002
+foo: foo dev version 1

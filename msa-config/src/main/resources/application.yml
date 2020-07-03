@@ -13,9 +13,9 @@ Spring:
       label: master  # git仓库分支
       server:
         native:
-          search-locations: classpath:/config
+          search-locations: classpath:/config # native 配置为 /src/main/resouces/config 目录
         git:
-          uri: https://github.com/SilentChen/msa.git # 配置git仓库的地址
+          uri: https://github.com/SilentChen/msa.git # git 配置仓库的地址
           search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: username  # git仓库的账号
           password: password  # git仓库的密码
