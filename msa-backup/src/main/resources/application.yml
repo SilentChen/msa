@@ -28,7 +28,7 @@ management:
 msa:
   backup:
     datasource:
-      host: localhost
+      host: 119.23.38.176
       userName: root
       password: qwer
       database: msa

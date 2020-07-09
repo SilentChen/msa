@@ -3,7 +3,7 @@ server:
 Spring:
   application:
     name: msa-config
-  profiles: native  # native or git or svn
+  profiles.active: native  # native or git or svn
   cloud:
     consul: localhost
     port: 8500
@@ -20,7 +20,7 @@ Spring:
           username: username  # git仓库的账号
           password: password  # git仓库的密码
   rabbitmq:
-    host: localhost
+    host: 127.0.0.1
     port: 5672
     usernane: guest
     password: guest
