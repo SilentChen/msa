@@ -10,7 +10,7 @@ spring:
         enabled: true  # 开启服务发现
         serviceId: msa-config # 配置中心服务名称
       name: msa-consumer  # 对应{application}部分
-      profile: dev   # 对应{profile}部分
+      profile: test   # 对应{profile}部分
       label: master  # 对应git的分支，如果配置中心使用的是本地存储，则该参数无用
   rabbitmq:
     host: localhost

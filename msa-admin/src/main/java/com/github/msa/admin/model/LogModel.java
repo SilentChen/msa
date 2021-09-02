@@ -1,6 +1,6 @@
 package com.github.msa.admin.model;
 
-public class LogModel {
+public class LogModel extends BaseModel {
     private Long id;
 
     private String userName;

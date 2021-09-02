@@ -20,5 +20,5 @@ public interface LogDao {
 
     List<LogModel> findPage();
 
-    List<LogModel> findPageUserName(@Param(value = "username") String username);
+    List<LogModel> findPageByUserName(@Param(value = "userName") String userName);
 }
